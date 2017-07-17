@@ -1,0 +1,20 @@
+{
+  "name": "Kambaa/doctrine-psr4-tests",
+  "description": "Using doctrine on a skeleton project",
+  "minimum-stability": "dev",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Yusuf Gündüz",
+      "email": "yusuf.gunduz@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "AppSkeleton\\": "src\\main\\php\\"
+    }
+  },
+  "require": {
+    "doctrine/orm": "v2.5.6"
+  }
+}
