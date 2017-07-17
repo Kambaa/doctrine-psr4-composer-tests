@@ -17,6 +17,7 @@ $isDevMode = false;
 // the connection configuration
 $dbParams = array(
     'driver' => 'pdo_mysql',
+    'host'=>'127.0.0.1',
     'user' => 'root',
     'password' => '1234565',
     'dbname' => 'doctrine_test',
