@@ -17,8 +17,8 @@ $isDevMode = false;
 // the connection configuration
 $dbParams = array(
     'driver' => 'pdo_mysql',
-    'user' => 'doctrine_test',
-    'password' => 'doctrine_test',
+    'user' => 'root',
+    'password' => '1234565',
     'dbname' => 'doctrine_test',
 );
 
