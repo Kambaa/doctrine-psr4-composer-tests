@@ -2,11 +2,13 @@
 <project name="php-skeleton" default="init" basedir="." description="My Skeleton Php App">
 
     <property name="message" value="Welcome, creating phar file..."/>
-    <property name="phar.file.name" value="php-skeleton"/>
+    <property name="phar.file.name" value="project"/>
+    <property name="target.dir" value="target/"/>
 
     <target name="init">
         <echo msg="${message}"/>
-        <phingcall target="createPhar"></phingcall>
+        <phingcall target="makeTargetDir"/>
+        <phingcall target="createPhar"/>
     </target>
 
     <target name="createPhar">
@@ -32,4 +34,7 @@
         <include name="vendor/"/>
     </fileset>
 
+    <target name="makeTargetDir">
+        <mkdir dir="${target.dir}"/>
+    </target>
 </project>
